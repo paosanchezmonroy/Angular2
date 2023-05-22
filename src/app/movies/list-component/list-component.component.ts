@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-component',
@@ -7,20 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponentComponent implements OnInit{
   constructor() {}
+  @Input()
   movies;
 
   ngOnInit(): void {
-    this.movies= [{
-      title: 'SpiderMan-Far for home',
-      releaseDate : new Date(),
-      price: 1400.99
-    },
-    {
-      title: 'Moana',
-      releaseDate : new Date("13-Octubr-2021"),
-      price: 349.45
-    
-    }]
+   
   }
 
 }
