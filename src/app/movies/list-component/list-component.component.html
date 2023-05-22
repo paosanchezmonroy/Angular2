@@ -12,7 +12,8 @@
   <div 
     *ngFor= "let movie of movies; let index = index " class="contein-Movies"
     >
-    <div> movie{{index}}::{{movie.title }}
+    <div> movie{{index}}::{{movie.title }} 
+      <button style="margin-left: 1rem;" (click)="remover(index)">Remover</button>
   
     </div>
     <div>

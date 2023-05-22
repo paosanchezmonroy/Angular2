@@ -13,5 +13,7 @@ export class ListComponentComponent implements OnInit{
   ngOnInit(): void {
    
   }
-
+  remover(indexmovie: number): void{
+    this.movies.splice(indexmovie,1);
+  }
 }
