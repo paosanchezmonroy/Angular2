@@ -1,0 +1,27 @@
+
+<div *ngIf="!movies">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*Gvgic29bgoiGVLmI6AVbUg.gif"/>
+  </div>
+  
+  <div *ngIf="movies?.length===0">
+    <p>No hay peliculas para mostrar</p>
+  </div>
+  
+  <div *ngIf="movies && movies.length > 0">
+  
+  <div 
+    *ngFor= "let movie of movies; let index = index " class="contein-Movies"
+    >
+    <div> movie{{index}}::{{movie.title }}
+  
+    </div>
+    <div>
+      {{movie.releaseDate | date:"dd-MMMM-yyyy"}}
+    </div>
+  
+    <div>
+      {{movie.price | currency}}
+    </div>
+  </div>
+  
+  
