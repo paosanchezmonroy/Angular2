@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
       price: 349.45
     
     }]
-   }, 500);
+   }, 3000);
   }
   title = 'Se envia lo que esta en el compotente';
 
