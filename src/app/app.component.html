@@ -1,5 +1,5 @@
 <app-menu> </app-menu>
-
+<div class="contenedor">
 <input type ="file" style="display: none" #cargador>
 <button (click)="cargador.click()">Cargar Archivo</button>
 
@@ -9,3 +9,4 @@
 
 <h2> Futuros estrenos</h2>
 <app-list-component [movies]="moviesProxEstrenos"></app-list-component>
+</div>
