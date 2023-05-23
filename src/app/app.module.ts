@@ -7,13 +7,16 @@ import { ListComponentComponent } from './movies/list-component/list-component.c
 import { ListadoGenericoComponent } from './utilidades/listado-generico/listado-generico.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './material/material.module';
-import { MenuComponent } from './menu/menu.component'
+import { MenuComponent } from './menu/menu.component';
+import { RatingComponent } from './utilidades/rating/rating.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ListComponentComponent,
     ListadoGenericoComponent,
-    MenuComponent
+    MenuComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
