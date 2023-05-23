@@ -11,11 +11,33 @@ export class RatingComponent implements OnInit{
   @Input()
   ratingSeleccionado = 0;
   maximoRatinArr =[];
+  votado = false;
+  ratingAnterior;
 
-  constructor(){}  
+  constructor(){ }  
+
   ngOnInit(): void {
    this.maximoRatinArr = Array(this.maximoRating).fill(0); 
     
   }
+
+  manejarMouseEnter(index: number ): void{
+    this.ratingSeleccionado = index + 1; 
+  }
+
+  manejarMouseLeave(){
+    if(this.ratingAnterior !== 0){
+      this.ratingSeleccionado = this.ratingAnterior;
+    }else{
+    this.ratingSeleccionado = 0;
+  }
+}
+
+  rate(index: number):void{
+    this.ratingSeleccionado = index + 1;
+    this.votado = true; 
+    this.ratingAnterior = this.ratingSeleccionado;
+  }
+
 
 }
