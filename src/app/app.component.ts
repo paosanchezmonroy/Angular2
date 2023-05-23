@@ -19,8 +19,75 @@ export class AppComponent implements OnInit{
       releaseDate : new Date("13-Octubr-2021"),
       price: 349.45
     
-    }]
-   }, 3000);
+    },
+    {
+      title: 'SpiderMan',
+      releaseDate : new Date(),
+      price: 1400.99
+    },
+    {
+      title: 'Moana',
+      releaseDate : new Date("13-Octubr-2021"),
+      price: 349.45
+    
+    },
+    {
+      title: 'SpiderMan',
+      releaseDate : new Date(),
+      price: 1400.99
+    },
+    {
+      title: 'Moana',
+      releaseDate : new Date("13-Octubr-2021"),
+      price: 349.45
+    
+    },
+    {
+      title: 'SpiderMan',
+      releaseDate : new Date(),
+      price: 1400.99
+    },
+    {
+      title: 'Moana',
+      releaseDate : new Date("13-Octubr-2021"),
+      price: 349.45
+    
+    },
+    {
+      title: 'SpiderMan',
+      releaseDate : new Date(),
+      price: 1400.99
+    },
+    {
+      title: 'Moana',
+      releaseDate : new Date("13-Octubr-2021"),
+      price: 349.45
+    
+    },
+    {
+      title: 'SpiderMan',
+      releaseDate : new Date(),
+      price: 1400.99
+    },
+    {
+      title: 'Moana',
+      releaseDate : new Date("13-Octubr-2021"),
+      price: 349.45
+    
+    },
+    {
+      title: 'SpiderMan',
+      releaseDate : new Date(),
+      price: 1400.99
+    },
+    {
+      title: 'Moana',
+      releaseDate : new Date("13-Octubr-2021"),
+      price: 349.45
+    
+    },
+  ]
+   }, 500);
   }
   title = 'Se envia lo que esta en el compotente';
 
